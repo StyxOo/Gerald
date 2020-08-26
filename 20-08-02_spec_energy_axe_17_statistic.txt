@@ -1,0 +1,28 @@
+[[Model]]
+    ((Model(gauss, prefix='g1_') + Model(gauss, prefix='g2_')) + Model(linear, prefix='lin_'))
+[[Fit Statistics]]
+    # fitting method   = leastsq
+    # function evals   = 111
+    # data points      = 9700
+    # variables        = 8
+    chi-square         = 14.6617428
+    reduced chi-square = 0.00151277
+    Akaike info crit   = -62982.0040
+    Bayesian info crit = -62924.5650
+[[Variables]]
+    lin_grad:  0.04890461 +/- 0.00162143 (3.32%) (init = 0.06525493)
+    lin_cut:   0.05632373 +/- 0.00385998 (6.85%) (init = -0.0214987)
+    g1_amp:    0.38836880 +/- 0.00191796 (0.49%) (init = 0.5467532)
+    g1_cen:    2.05363871 +/- 5.3756e-04 (0.03%) (init = 2.0691)
+    g1_wid:    0.04925157 +/- 4.6195e-04 (0.94%) (init = 0.05)
+    g2_amp:    0.19928754 +/- 0.00179942 (0.90%) (init = 0.3235525)
+    g2_cen:    2.18894913 +/- 0.00107835 (0.05%) (init = 2.1614)
+    g2_wid:    0.05080036 +/- 9.0492e-04 (1.78%) (init = 0.06)
+[[Correlations]] (unreported correlations are < 0.500)
+    C(lin_grad, lin_cut) = -0.991
+    C(g1_cen, g2_cen)    =  0.837
+    C(g1_cen, g2_wid)    = -0.801
+    C(g1_wid, g2_cen)    =  0.797
+    C(g2_cen, g2_wid)    = -0.737
+    C(g1_cen, g1_wid)    =  0.710
+    C(g1_wid, g2_wid)    = -0.642
