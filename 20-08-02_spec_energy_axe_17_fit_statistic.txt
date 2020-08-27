@@ -1,0 +1,29 @@
+[[Model]]
+    ((Model(gauss, prefix='g1_') + Model(gauss, prefix='g2_')) + Model(exponential, prefix='exp_'))
+[[Fit Statistics]]
+    # fitting method   = leastsq
+    # function evals   = 136
+    # data points      = 9700
+    # variables        = 8
+    chi-square         = 14.6756416
+    reduced chi-square = 0.00151420
+    Akaike info crit   = -62972.8132
+    Bayesian info crit = -62915.3741
+[[Variables]]
+    exp_amp:     0.00501993 +/- 1.6668e-04 (3.32%) (init = 0.006517287)
+    exp_yshift:  0.11581493 +/- 0.00191877 (1.66%) (init = 0.05600849)
+    g1_amp:      0.38788866 +/- 0.00204961 (0.53%) (init = 0.5526631)
+    g1_cen:      2.05312640 +/- 5.6308e-04 (0.03%) (init = 2.0691)
+    g1_wid:      0.04908052 +/- 4.6540e-04 (0.95%) (init = 0.035)
+    g2_amp:      0.20043401 +/- 0.00179517 (0.90%) (init = 0.3304958)
+    g2_cen:      2.18876733 +/- 0.00115931 (0.05%) (init = 2.1614)
+    g2_wid:      0.05291348 +/- 9.5878e-04 (1.81%) (init = 0.03)
+[[Correlations]] (unreported correlations are < 0.500)
+    C(exp_amp, exp_yshift) = -0.964
+    C(g1_cen, g2_cen)      =  0.852
+    C(g1_cen, g2_wid)      = -0.814
+    C(g1_wid, g2_cen)      =  0.804
+    C(g2_cen, g2_wid)      = -0.756
+    C(g1_cen, g1_wid)      =  0.719
+    C(g1_wid, g2_wid)      = -0.642
+    C(g1_amp, g2_wid)      = -0.527
